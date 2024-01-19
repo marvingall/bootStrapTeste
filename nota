@@ -37,10 +37,7 @@
       justify-content: center;
     }
 
-    .carrosel-item img {
-      width: 40%;
-      margin: auto;
-    }
+ 
   </style>
 </head>
 
