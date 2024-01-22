@@ -7,97 +7,79 @@
   <title>Bootstrap Carrossel</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style>
-    .oi {
-      border: 1px solid red;
-      height: 220px;
-    }
 
-   
-
-    .ola {
-      border: 1px solid blue;
-      height: 50px;
-    }
-
-    .xau {
-      height: 100px;
-      border: 1px solid green;
-    }
-
-    .lorem {
-      text-align: center;
-      height: 100px;
-    }
-
-    .p {
-      display: flex;
-    }
-
-    .pFilho {
-      justify-content: center;
-    }
-
-    /* Ajuste para imagens com 80% da largura da tela */
-    img {
-      width: 200px;
-      height: 100px;
-      margin: auto;
-    }
-
-
-  </style>
 </head>
 
-<body>
+<body class="bg-dark">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-6 ola menu"> <img class="img-fluid img-thumbnail" src="src/imagens/png-clipart-laferrari-ferrari-tr-enzo-ferrari-car-ferrari-horse-mammal.png" alt=""></div>
-
-      <div class="col-6 ola   menu"> company logo</div>
-      <div class="col-12 oi"></div>
+  <div class="container row bg-warning text-white border border-success mx-auto">
+    <div class="col-6 d-flex">
+      <img class="w-25 mx-auto" src="https://logodownload.org/wp-content/uploads/2017/05/ferrari-logo-1.png" alt="">
     </div>
-    <div class="row">
-      <div class="lorem">lorem ipsum</div>
-
-      <div id="carouselExample" class="carousel slide mx-auto">
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <img src="src/imagens/Design sem nome (1).png" class="d-block w-50 img-fluid" alt="...">
-          </div>
-
-          <div class="carousel-item">
-            <img src="src/imagens/Design sem nome (2).png" class="d-block w-50 img-fluid" alt="...">
-          </div>
-
-          <div class="carousel-item">
-            <img src="src/imagens/Design sem nome.png" class="d-block w-50 img-fluid" alt="...">
-          </div>
-          
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="row">
-        <div class="col-4 oi">coluna 4</div>
-        <div class="col-4 oi">coluna 5</div>
-        <div class="col-4 oi">coluna 6</div>
-      </div>
-    </div>
+    <div class="col-2 " >1</div>
+    <div class="col-2 ">2</div>
+    <div class="col-2 ">3</div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+  <div class="container flexcol-md-12 p-5 d-flex align-items-center bg-white mb-5">
+    <img class="w-75 mx-auto" src="https://visioncomex.com/wp-content/uploads/2023/05/ferrari-296-gtb-2023-vermelho-1.png" alt="">
+  </div>
+
+  <div class="container text-center my-5">
+    <h1>Lorem, ipsum dolor.</h1>
+  </div>
+
+  <div id="carouselExampleFade" class="container d-flex carousel slide carousel-fade my-5" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-50 mx-auto" src="src/imagens/andreas-brun-fjDDh6iOBQA-unsplash.jpg" alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-50 mx-auto" src="src/imagens/alec-jones-WDsmqzxy8Ig-unsplash.jpg" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-50 mx-auto" src="src/imagens/adrian-newell-jWM41o-TMAw-unsplash.jpg" alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only h3">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only h3">Próximo</span>
+    </a>
+  </div>
+
+  <div class="container row d-flex my-5 border border-dark ">
+
+    <div class="card col-2 mx-auto" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1595951280326-8ffa79bdfbc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZlcnJhcml8ZW58MHwwfDB8fHww" alt="Imagem de capa do card">
+      <div class="card-body">
+        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+      </div>
+    </div> 
+    
+    <div class="card col-2 mx-auto" style="width: 18rem;">
+      <img class="card-img-top " src="https://images.unsplash.com/photo-1595951280326-8ffa79bdfbc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZlcnJhcml8ZW58MHwwfDB8fHww" alt="Imagem de capa do card">
+      <div class="card-body">
+        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+      </div>
+    </div> 
+
+        <div class="card col-2 mx-auto" style="width: 18rem;">
+      <img class="card-img-top" src="https://images.unsplash.com/photo-1595951280326-8ffa79bdfbc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZlcnJhcml8ZW58MHwwfDB8fHww" alt="Imagem de capa do card">
+      <div class="card-body">
+        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+      </div>
+    </div> 
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 
 </html>
